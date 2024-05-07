@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparison of Two Numbers</title>
+</head>
+<body>
+
+<script>
+  // Get the first number from the user
+  var firstNumber = prompt("Please enter the first number:");
+
+  // Convert the first input to a numeric value
+  var firstNumericValue = parseFloat(firstNumber);
+
+  // Check if the input is a valid number
+  if (!isNaN(firstNumericValue)) {
+    // Get the second number from the user
+    var secondNumber = prompt("Please enter the second number:");
+
+    // Convert the second input to a numeric value
+    var secondNumericValue = parseFloat(secondNumber);
+
+    // Check if the input is a valid number
+    if (!isNaN(secondNumericValue)) {
+      // Compare the numbers
+      if (firstNumericValue > secondNumericValue) {
+        var output = "Result: " + firstNumericValue + " is greater than " + secondNumericValue;
+        document.body.innerHTML += "<p>" + output + "</p>";
+      } else if (firstNumericValue < secondNumericValue) {
+        var output = "Result: " + firstNumericValue + " is less than " + secondNumericValue;
+        document.body.innerHTML += "<p>" + output + "</p>";
+      } else {
+        var output = "Result: Both numbers are equal: " + firstNumericValue + " = " + secondNumericValue;
+        document.body.innerHTML += "<p>" + output + "</p>";
+      }
+    } else {
+      var output = "Invalid input. Please enter a valid second number.";
+      document.body.innerHTML += "<p>" + output + "</p>";
+    }
+  } else {
+    var output = "Invalid input. Please enter a valid first number.";
+    document.body.innerHTML += "<p>" + output + "</p>";
+  }
+</script>
+
+</body>
+</html>

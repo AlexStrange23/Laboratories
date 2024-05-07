@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My First Webpage</title>
+<style>
+    body {
+        max-width: 50%; /* Reduce the width by 25% */
+        margin: 0 auto; /* Center the content */
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Three columns */
+        gap: 20px;
+    }
+    .header {
+        grid-column: span 3; /* Span across all columns */
+        background-color: orange;
+        padding: 30px;
+        color: white;
+        margin-bottom: 20px;
+    }
+    .long-text-container {
+        grid-column: 1; /* Place in the first column */
+        border: 10px solid white;
+        padding: 40px;
+        background-color: lightblue;
+        color: black;
+    }
+    .main-heading-container {
+        grid-column: 2; /* Place in the second column */
+        margin-top: 10px;
+        height: 90px;
+        background-color: orange;
+        color: white;
+        position: relative;
+        padding: 5px 10px; /* Adjusted padding */
+        font-size: 20px; /* Adjusted font size */
+
+    }
+    .list-container {
+        grid-column: 1; /* Place in the first column */ 
+        border: 10px solid white;
+        background-color: rgb(58, 32, 174);
+        padding: 20px;
+        height: 170px;
+    }
+    .additional-text-container {
+        grid-column: 2; /* Place in the second column */
+        background-color: rgb(255, 255, 255);
+        color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 10x;
+    font-size: 15px;
+    }
+    .additional-text-container p:nth-child(1) {
+        grid-column: 1; /* Place first paragraph in the first column */
+    }
+    .additional-text-container p:nth-child(2) {
+        grid-column: 2; /* Place second paragraph in the second column */
+    }
+    .yes {
+        grid-column: 2; /* Place in the second column */
+        background-color: lightblue;
+        color: black;
+        padding: 20px;
+    }
+    .footer{
+        border: 10px solid white;
+        background-color: rgb(70, 70, 70);
+        padding: 1px;
+        text-align: right;
+    }
+    .text3 {
+    grid-column: 2; /* Place in the second column */
+    grid-row: 2; /* Position it at the first row */
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 10x;
+    font-size: 15px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Mysite.com</h1>
+    <p>This is my first webpage</p>
+</div>
+
+<div class="container">
+    <div class="long-text-container">
+        <p>Some long text is here Some long text is here Some long text is here</p>
+        <p></p>
+        <p>Some long text is here</p>
+    </div>
+
+    <div class="main-heading-container">
+        <h1>MAIN HEADING HERE</h1>
+        <div class="text3">
+            <p>Whoever is looking for a quick start of his online project, these free simple HTML templates are the perfect tool to start with.</p>
+        </div>
+        <div class="additional-text-container">
+            <p>No need to look further if the minimalist look is what you are after. Sometimes keeping it simple is the way to go. No clutter, no distractions. Just straightforward incredible content which helps you attract new visitors to your site. In case you plan to promote your work and services, this is a perfect method for scaling up your business. An online presence built to perfection.</p>
+            <p>The fantastic collection of free HTML templates speed up your web design procedure and ensure excellent results. With a ready-to-use website template, you can have a fully functional website ready quickly. And even if you're a newbie, you can still achieve the same level of professionalism. However, having the pure basics of HTML and CSS comes very helpful.</p>
+        </div>
+        <div class="footer">
+            <p>Some footer item | Another item | Last footer item</p>
+        </div>
+    </div>
+
+    <div class="list-container">
+        <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

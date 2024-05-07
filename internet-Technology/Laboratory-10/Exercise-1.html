@@ -1,0 +1,38 @@
+<html>
+<script>
+  function calculateSum() {
+    var inputs = document.getElementsByName("number");
+    
+    var sum = 0;
+    
+    for (var i = 0; i < inputs.length; i++) {
+
+      var value = parseFloat(inputs[i].value);
+      
+      if (!isNaN(value)) {
+        sum += value / 2;
+      }
+    }
+    
+    document.getElementById("result").innerText = "Нийлбэр нь : " + sum;
+  }
+</script>
+</head>
+<body>
+<h2>10 тоо оруулна уу.</h2>
+<form>
+  <input type="number" name="number"><br>
+  <input type="number" name="number"><br>
+  <input type="number" name="number"><br>
+  <input type="number" name="number"><br>
+  <input type="number" name="number"><br>
+  <input type="number" name="number"><br>
+  <input type="number" name="number"><br>
+  <input type="number" name="number"><br>
+  <input type="number" name="number"><br>
+  <input type="number" name="number"><br>
+  <button type="button" onclick="calculateSum()">Бодох</button>
+</form>
+<div id="result"></div>
+</body>
+</html>

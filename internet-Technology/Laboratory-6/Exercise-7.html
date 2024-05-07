@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Age Category</title>
+</head>
+<body>
+
+<script>
+  // Get the age of the user from the prompt window
+  var age = prompt("Please enter your age:");
+
+  // Convert the input to a numeric value
+  var numericAge = parseInt(age);
+
+  // Check if the input is a valid number
+  if (!isNaN(numericAge)) {
+    // Determine the age category
+    var category;
+    if (numericAge < 18) {
+      category = "child";
+    } else if (numericAge >= 18 && numericAge <= 30) {
+      category = "young";
+    } else if (numericAge >= 31 && numericAge <= 50) {
+      category = "middle-aged";
+    } else {
+      category = "old";
+    }
+
+    // Display the age category on the HTML page
+    var output = "Your age category is: " + category;
+    document.body.innerHTML += "<p>" + output + "</p>";
+  } else {
+    // Display an error message if the input is invalid
+    var output = "Invalid input. Please enter a valid age.";
+    document.body.innerHTML += "<p>" + output + "</p>";
+  }
+</script>
+
+</body>
+</html>

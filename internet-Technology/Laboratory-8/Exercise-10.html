@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<body>
+<button onclick="displayRandomImages()">Random</button>
+
+<div id="imageContainer"></div>
+
+<script>
+  function displayRandomImages() {
+    var imageContainer = document.getElementById("imageContainer");
+    imageContainer.innerHTML = ""; 
+
+    var imageUrls = [
+      "https://via.placeholder.com/150?text=Image+1",
+      "https://via.placeholder.com/150?text=Image+2",
+      "https://via.placeholder.com/150?text=Image+3",
+      "https://via.placeholder.com/150?text=Image+4",
+      "https://via.placeholder.com/150?text=Image+5",
+      "https://via.placeholder.com/150?text=Image+6",
+      "https://via.placeholder.com/150?text=Image+7",
+      "https://via.placeholder.com/150?text=Image+8",
+      "https://via.placeholder.com/150?text=Image+9",
+      "https://via.placeholder.com/150?text=Image+10"
+    ];
+
+    imageUrls.sort(() => Math.random() - 0.5);
+
+    for (var i = 0; i < 4; i++) {
+      var img = document.createElement("img");
+      img.src = imageUrls[i];
+      img.alt = "Random Image " + (i + 1);
+      imageContainer.appendChild(img);
+    }
+  }
+</script>
+
+</body>
+</html>

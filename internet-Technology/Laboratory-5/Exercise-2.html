@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subtraction of Two Numbers</title>
+</head>
+<body>
+
+<h2>Subtraction of Two Numbers</h2>
+
+<!-- Input fields for the two numbers -->
+<label for="firstNumber">Enter the first number:</label>
+<input type="number" id="firstNumber"><br><br>
+
+<label for="secondNumber">Enter the second number:</label>
+<input type="number" id="secondNumber"><br><br>
+
+<!-- Button to perform subtraction -->
+<button onclick="subtractNumbers()">Subtract</button><br><br>
+
+<!-- Container to display the result -->
+<div id="result"></div>
+
+<script>
+  // Function to subtract the two numbers and display the result
+  function subtractNumbers() {
+    // Get the values of the input fields
+    var firstNumber = parseFloat(document.getElementById("firstNumber").value);
+    var secondNumber = parseFloat(document.getElementById("secondNumber").value);
+
+    // Check if both inputs are valid numbers
+    if (!isNaN(firstNumber) && !isNaN(secondNumber)) {
+      // Subtract the second number from the first number
+      var result = firstNumber - secondNumber;
+
+      // Display the result in the result container
+      document.getElementById("result").innerText = "Result of subtraction: " + result;
+    } else {
+      // Display error message if inputs are invalid
+      document.getElementById("result").innerText = "Invalid input. Please enter valid numbers.";
+    }
+  }
+</script>
+
+</body>
+</html>

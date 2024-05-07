@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <table border="0" width="30%" height="5%">
+            <tr>
+
+                <td bgcolor="#FFA730" style="color: rgb(0, 0, 0);">Sign Up</td>
+
+            </tr>
+        </table>
+    </head>
+    <body>
+        <form>
+        <table border="0" width="30%" height="20%">
+            <tr>
+
+                <td bgcolor="#3033FF" style="color: white; text-align: right"><label for="fname">First Name :</label></td>
+                <td bgcolor="#3033FF" style="color: white;"><input type="text" id="fname" name="fname" placeholder="Enter First Name..." style="height: 25px; width: 170px" required/></td>
+
+            </tr>
+            
+            <tr>
+
+                <td bgcolor="#3033FF" style="color: white; text-align: right"><label for="fname">Last Name :</label></td>
+                <td bgcolor="#3033FF" style="color: white;"><input type="text" id="lname" name="lname" placeholder="Enter Last Name..." style="height: 25px; width: 170px" required/></td>
+
+            </tr>
+
+            <tr>
+
+                <td bgcolor="#3033FF" style="color: white; text-align: right"><label for="password">Password :</label></td>
+                <td bgcolor="#3033FF" style="color: white;"><input type="password" id="password" name="password" style="height: 25px; width: 170px" required/></td>
+
+            </tr>
+
+            <tr>
+
+                <td bgcolor="#3033FF" style="color: white; text-align: right"><label for="dobInput">Date of Birth :</label></td>
+                <td bgcolor="#3033FF" style="color: white;"><input type="date" id="dobInput" name="dob" placeholder="mm / dd / yyyy" style="height: 25px; width: 130px" required></td>
+
+            </tr>
+
+            <tr>
+
+                <td bgcolor="#3033FF" style="color: white; text-align: right"><label for="gender">Gender :</label></td>
+                <td bgcolor="#3033FF" style="color: white;">
+                    <div>
+                        
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+
+                     </div>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td bgcolor="#3033FF" style="color: white; text-align: right"><label for="country">Country :</label></td>
+                <td bgcolor="#3033FF" style="color: white;"><select id="country" name="country" required>
+                    <option value="mongolia">Mongolia</option>
+                    <option value="russia">Russia</option>
+                    <option value="china">China</option>
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td bgcolor="#3033FF" style="color: white; text-align: right"><label for="comment">Comment :</label></td>
+                <td bgcolor="#3033FF" style="color: white;"><input type="text" id="comment" name="comment" placeholder="Type your comment here..." style="height: 40px; width: 200px" required/></td>
+
+            </tr>
+</table>
+<table border="0" width="30%" height="10%">
+            <tr>
+
+                <td bgcolor="#FF5430" style="color: white; text-align: center">
+                    <div>
+                        
+                        <input type="checkbox" id="terms" name="terms" value="terms" required>
+                        <label for="terms">I agree the Terms of Use</label>
+                    
+                     </div>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td bgcolor="#FFA730" style="color: white; text-align: right">
+                    <input type="submit" id="submit" name="submit" style="background-color: green; color:white; height: 20px; width: 60px"/>
+                    <input type="reset" id="cancel" name="cancel" value="Cancel" style="background-color: red; color:white; height: 20px; width: 60px;"/>
+                
+                </td>
+
+            </tr>
+
+
+
+        
+
+
+        </form>
+    </body>

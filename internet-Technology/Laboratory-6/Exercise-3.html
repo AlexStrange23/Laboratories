@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expression Evaluation</title>
+</head>
+<body>
+
+<script>
+  var a = 10;
+  var b = 5;
+
+  // Expression a
+  var resultA = ++a + (a - b % 3) * 10;
+  var outputA = "Result of expression a: " + resultA + "<br>";
+
+  // Expression b
+  var resultB = ++a * 3 % 5 + b++;
+  var outputB = "Result of expression b: " + resultB + "<br>";
+
+  // Expression c
+  var resultC = a % 3 * (-b);
+  var outputC = "Result of expression c: " + resultC + "<br>";
+
+  // Expression d
+  var resultD = a / b + b;
+  var outputD = "Result of expression d: " + resultD + "<br>";
+
+  // Display results as text on the HTML page
+  document.body.innerHTML += outputA;
+  document.body.innerHTML += outputB;
+  document.body.innerHTML += outputC;
+  document.body.innerHTML += outputD;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<body>
+
+
+<button onclick="calculate()">Calculate</button>
+
+<script>
+  function calculate() {
+    var inputValue = prompt("Too oruulna uu:");
+
+    var numericValue = parseFloat(inputValue);
+
+    if (!isNaN(numericValue)) {
+      var integerPart = Math.floor(numericValue / 5);
+      var remainder = numericValue % 5;
+
+      alert("5-d huvaagaad garsan buhel: " + integerPart + "\n5-d huvaagaad garsan uldegdel n: " + remainder);
+    } else {
+      alert("Error. Too oruulna uu.");
+    }
+  }
+</script>
+
+</body>
+</html>

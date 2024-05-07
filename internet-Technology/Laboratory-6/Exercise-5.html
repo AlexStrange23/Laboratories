@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Operations on User Input</title>
+</head>
+<body>
+
+<!-- Description: -->
+<p>
+    The problem arises because the value retrieved from the prompt function is always returned as a string,
+    even if the user enters a numeric value. Therefore, performing mathematical operations directly on 
+    this string will result in string concatenation rather than numerical operations.
+</p>
+
+<!-- Solution: -->
+<p>
+    To solve this problem, we need to convert the user input from a string to a numeric data type 
+    (such as an integer or float) before performing the mathematical operations. We use parseFloat() 
+    to convert the string to a numeric value. Additionally, we check if the input is a valid number 
+    using isNaN(). If the input is not a valid number, an error message is printed to the console.
+    Otherwise, the mathematical operations are performed on the numeric value.
+</p>
+
+<script>
+  // Get a numeric value from the user using prompt
+  var userInput = prompt("Please enter a numeric value:");
+  
+  // Convert user input to a numeric value
+  var numericValue = parseFloat(userInput);
+
+  // Check if the input is a valid number
+  if (!isNaN(numericValue)) {
+    // Perform operations
+    var additionResult = numericValue + 2;
+    var subtractionResult = numericValue - 2;
+    var multiplicationResult = numericValue * 2;
+    var divisionResult = numericValue / 2;
+
+    // Display results
+    var output = "User input: " + numericValue + "<br>" +
+                 "Addition result: " + additionResult + "<br>" +
+                 "Subtraction result: " + subtractionResult + "<br>" +
+                 "Multiplication result: " + multiplicationResult + "<br>" +
+                 "Division result: " + divisionResult;
+    document.body.innerHTML += "<p>" + output + "</p>";
+  } else {
+    // Display error message
+    document.body.innerHTML += "<p>Invalid input. Please enter a numeric value.</p>";
+  }
+</script>
+
+</body>
+</html>

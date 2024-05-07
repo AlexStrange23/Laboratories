@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+  function printStar() {
+    var numbers = [];
+    for (var i = 0; i < 5; i++) {
+      var num = parseInt(prompt("1-ээс 30 хооронд тоо сонгоно уу :"));
+      if (!isNaN(num) && num >= 1 && num <= 30) {
+        numbers.push(num);
+      } else {
+        alert("Error. 1-ээс 30 хооронд тоо сонгоно уу.");
+        return;
+      }
+    }
+    
+    for (var j = 0; j < numbers.length; j++) {
+      var stars = "";
+      for (var k = 0; k < numbers[j]; k++) {
+        stars += "*";
+      }
+      console.log(stars);
+    }
+  }
+</script>
+</head>
+<body>
+<button onclick="printStar()">Start</button>
+</body>
+</html>

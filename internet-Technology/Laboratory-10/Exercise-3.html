@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+  function findNumbersEndingIn3() {
+    var numbers = [];
+    for (var i = 1; i <= 100; i++) {
+      if (i % 10 === 3) {
+        numbers.push(i);
+      }
+    }
+    document.getElementById("result").innerText = numbers.join(', ');
+  }
+</script>
+</head>
+<body>
+<h2>1-ээс 100 хүртэлх бүх 3-аар төгссөн тоонууд</h2>
+<button onclick="findNumbersEndingIn3()">Start</button>
+<div id="result"></div>
+</body>
+</html>

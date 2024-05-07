@@ -1,0 +1,21 @@
+<html>
+<body>
+<button onclick="rollDice()">Shoo erguuleh</button>
+
+<p id="result"></p>
+
+<script>
+  function rollDice() {
+    var result = "Shoo-g 20 udaa hayav:<br>";
+    
+    for (var i = 0; i < 20; i++) {
+      var randomNumber = Math.floor(Math.random() * 6) + 1;
+      result += (i + 1) + "dah udaagaa buuhad : " + randomNumber + "<br>";
+    }
+    
+    document.getElementById("result").innerHTML = result;
+  }
+</script>
+
+</body>
+</html>

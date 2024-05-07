@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+<body>
+<h2>Loop</h2>
+<ul id="list"></ul>
+<script>
+  for (var i = 1; i <= 5; i++) {
+    var listItem = document.createElement("li");
+    listItem.textContent = "Item " + i;
+    document.getElementById("list").appendChild(listItem);
+  }
+</script>
+</body>
+</html>

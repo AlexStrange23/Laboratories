@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>New Form</title>
+        <h1>New Form</h1>
+    </head>
+    <body>
+        <form>
+            <label for="email">E-mail Address :</label>
+            <input type ="email" id="email" name="email" placeholder="uma@yahoo.com" required/>
+
+            <br>
+
+            <label for="numericinput">Telephone Number :</label>
+            <input type="tel" id="numericInput" name="numericInput" pattern="[0-9]*" required/>
+
+            <br>
+
+            <label for="url">Url :</label>
+            <input type ="url" id="url" name="url" required/>
+
+            <br>
+
+            <label for="numericInput">Numberic Value :</label>
+            <input type="number" id="numericInput" name="numericInput" min="10" max="100" required>
+
+            <br>
+
+            <label for="rangeInput">Range:</label>
+            <input type="range" id="rangeInput" name="rangeInput" min="0" max="100" step="1" value="50">
+      
+            <br>
+
+            <label for="country">Country :</label>
+            <input type ="text" id="countryInput" name="country" required/>
+
+            <br>
+
+            <label for="search">Search :</label>
+            <input type ="search" id="searchInput" name="search" required/>
+
+            <br>
+
+            <label for="colorInput">Color:</label>
+            <input type="color" id="colorInput" name="color" value="#000000">
+      
+            <br>
+
+            <label for="dobInput">Date of Birth :</label>
+            <input type="date" id="dobInput" name="dob" placeholder="mm / dd / yyyy" required>
+      
+            <br>
+
+            <label for="monthInput">Month :</label>
+            <input type="month" id="monthInput" name="month" placeholder="---------, ----" required>
+      
+            <br>
+
+            <label for="weekInput">Week :</label>
+            <input type="week" id="weekInput" name="week" placeholder="--, ----" required>
+      
+            <br>
+
+            <label for="timeInput">Time :</label>
+            <input type="time" id="timeInput" name="time" placeholder="--:-- --" required>
+      
+            <br>
+
+            <label for="datetimeInput">Datetime :</label>
+            <input type="datetime" id="datetimeInput" name="datetime" required>
+      
+            <br>
+
+            <label for="datetime-localInput">Datetime-local :</label>
+            <input type="datetime-local" id="datetime-localInput" name="datetime-local" placeholder="mm / dd / yyyy  --:-- --" required>
+      
+            <br>
+
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <input type="submit" value="Submit">
+            </a>
+        </form>
+    </body>
+</html>

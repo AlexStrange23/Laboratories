@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+  function isEven(num) {
+    return num % 2 === 0;
+  }
+
+  function getAndCheckNumbers() {
+    var n = parseInt(prompt("N тоо оруулна уу :"));
+    if (!isNaN(n) && n > 0) {
+      var evenNumbers = [];
+      for (var i = 0; i < n; i++) {
+        var number = parseFloat(prompt((i + 1) + "Тоо оруулна уу :"));
+        if (!isNaN(number)) {
+          if (isEven(number)) {
+            evenNumbers.push(number);
+          }
+        } else {
+          alert("Зөв тоо оруулна уу.");
+          return;
+        }
+      }
+      if (evenNumbers.length > 0) {
+        alert("Тэгш тоонууд : " + evenNumbers.join(', '));
+      } else {
+        alert("Тэгш тоонууд байхгүй байна.");
+      }
+    } else {
+      alert("Error. N. Эерэг тоо оруулна уу.");
+    }
+  }
+</script>
+</head>
+<body>
+<h2>Тэгш тоо шалгах</h2>
+<button onclick="getAndCheckNumbers()">Start</button>
+</body>
+</html>

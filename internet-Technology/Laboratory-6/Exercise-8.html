@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Even or Odd</title>
+</head>
+<body>
+
+<script>
+  // Get a numerical value from the user through the prompt window
+  var userInput = prompt("Please enter a number:");
+
+  // Convert the input to a numeric value
+  var numericValue = parseFloat(userInput);
+
+  // Check if the input is a valid number
+  if (!isNaN(numericValue)) {
+    // Check if the number is even or odd
+    var result;
+    if (numericValue % 2 === 0) {
+      result = numericValue + " is Even";
+    } else {
+      result = numericValue + " is Odd";
+    }
+
+    // Display the result on the HTML page
+    var output = "Result: " + result;
+    document.body.innerHTML += "<p>" + output + "</p>";
+  } else {
+    // Display an error message if the input is invalid
+    var output = "Invalid input. Please enter a valid number.";
+    document.body.innerHTML += "<p>" + output + "</p>";
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<body>
+<label for="string1">Ehnii string oruulna uu:</label>
+<input type="text" id="string1">
+
+<label for="string2">Hoyordah string oruulna uu:</label>
+<input type="text" id="string2">
+
+<button onclick="concatFirstWords()">Clicks</button>
+
+<p id="result"></p>
+
+<script>
+  function concatFirstWords() {
+    var string1 = document.getElementById("string1").value;
+    var string2 = document.getElementById("string2").value;
+    
+    var words1 = string1.trim().split(" ");
+    var words2 = string2.trim().split(" ");
+    
+    var firstWord1 = words1[0];
+    var firstWord2 = words2[0];
+    
+    var result = firstWord1 + " " + firstWord2;
+    
+    document.getElementById("result").textContent = result;
+  }
+</script>
+
+</body>
+</html>

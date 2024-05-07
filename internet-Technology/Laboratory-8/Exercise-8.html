@@ -1,0 +1,20 @@
+<html>
+<body>
+<button onclick="calculateSquare()">Kvadrat oloh 1 ees 20</button>
+
+<p id="result"></p>
+
+<script>
+  function calculateSquare() {
+    var result = "";
+    
+    for (var i = 1; i <= 20; i++) {
+      var square = i * i;
+      result += i + " -nii kvadrat n : " + square + "<br>";
+    }
+    document.getElementById("result").innerHTML = result;
+  }
+</script>
+
+</body>
+</html>

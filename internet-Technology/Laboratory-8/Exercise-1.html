@@ -1,0 +1,32 @@
+<html>
+<body>
+
+<label for="num1">Ehnii too oruulna uu:</label>
+<input type="number" id="num1">
+
+<label for="num2">Hoyor daht too oruulna uu:</label>
+<input type="number" id="num2">
+
+<button onclick="findMax()">Find Maximum</button>
+
+<p id="result"></p>
+
+<script>
+  function findMax() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    
+    if (!isNaN(num1) && !isNaN(num2)) {
+      var maxNumber = num1 > num2 ? num1 : num2;
+      var message = "Hamgiin ih too n " + maxNumber;
+      document.getElementById("result").textContent = message;
+      alert(message);
+    } else {
+      document.getElementById("result").textContent = "Error. Too oruulna uu.";
+      alert("Error. Too oruulna uu.");
+    }
+  }
+</script>
+
+</body>
+</html>

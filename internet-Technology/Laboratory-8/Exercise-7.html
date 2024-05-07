@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<button onclick="findMax()">Hamgiin ihiig oloh</button>
+
+<p id="result"></p>
+
+<script>
+  function findMax() {
+    var num1 = parseFloat(prompt("Ehnii string oruulna uu:"));
+    var num2 = parseFloat(prompt("Hoyordah string oruulna uu:"));
+    var num3 = parseFloat(prompt("Guravdah string oruulna uu:"));
+
+    if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
+      var maxNumber = Math.max(num1, num2, num3);
+      
+      document.getElementById("result").textContent = "Gurvan toonii hamgiin ih n :" + maxNumber;
+    } else {
+      document.getElementById("result").textContent = "Error. Too oruulna uu.";
+    }
+  }
+</script>
+
+</body>
+</html>

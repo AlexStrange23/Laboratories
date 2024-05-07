@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Month Number to Name</title>
+</head>
+<body>
+
+<script>
+  // Get the month number from the user through the prompt window
+  var monthNumber = prompt("Please enter the month number:");
+
+  // Convert the input to a numeric value
+  var numericMonth = parseInt(monthNumber);
+
+  // Check if the input is a valid number
+  if (!isNaN(numericMonth) && numericMonth >= 1 && numericMonth <= 12) {
+    // Define an array of month names
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    // Get the corresponding month name
+    var monthName = months[numericMonth - 1];
+
+    // Display the result on the HTML page
+    var output = "Month " + numericMonth + "th is " + monthName;
+    document.body.innerHTML += "<p>" + output + "</p>";
+  } else {
+    // Display an error message if the input is invalid
+    var output = "Invalid input. Please enter a valid month number (1-12).";
+    document.body.innerHTML += "<p>" + output + "</p>";
+  }
+</script>
+
+</body>
+</html>

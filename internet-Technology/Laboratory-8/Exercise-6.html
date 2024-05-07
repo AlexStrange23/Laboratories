@@ -1,0 +1,22 @@
+<html>
+<body>
+<p id="day"></p>
+<script>
+  // Array of day names
+  var dayNames = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
+  
+  var today = new Date().getDay();
+  
+  document.getElementById("day").textContent = "Today is :" + dayNames[today];
+</script>
+
+</body>
+</html>

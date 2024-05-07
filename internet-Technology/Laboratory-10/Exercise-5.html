@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+  function calculateFee() {
+    var usagePerMonth = parseInt(prompt("Сард хэдэн удаа фитнесс-д явдаг аа оруулна уу (between 0 and 31):"));
+    if (!isNaN(usagePerMonth) && usagePerMonth >= 0 && usagePerMonth <= 31) {
+      var feePerDay = (usagePerMonth < 7) ? 100000 : 150000;
+      var monthlyPayment = feePerDay * usagePerMonth;
+      document.getElementById("result").innerText = monthlyPayment.toLocaleString() + " MNT";
+    } else {
+      alert("Зөв өдрүүдийн тоог оруулна уу. ( 0 - 31 ).");
+    }
+  }
+</script>
+</head>
+<body>
+<h2>Фитнессын сарын төлбөр</h2>
+<button onclick="calculateFee()">Бодох</button>
+<div id="result"></div>
+</body>
+</html>

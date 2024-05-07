@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<body>
+
+<p id="datetime"></p>
+
+<script>
+
+  function formatDateTime(date) {
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+    return date.toLocaleDateString('en-US', options);
+  }
+
+  var now = new Date();
+
+  document.getElementById("datetime").textContent = "Unuudriin on sar udur n : " + formatDateTime(now);
+</script>
+
+</body>
+</html>

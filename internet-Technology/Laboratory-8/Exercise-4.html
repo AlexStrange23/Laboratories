@@ -1,0 +1,26 @@
+<html>
+<body>
+<p>"This is a new day to start"</p>
+
+<button onclick="countLetters()">Count Letters</button>
+
+<p id="result"></p>
+
+<script>
+  function countLetters() {
+    var text = "This is a new day to start";
+    var count = 0;
+    text = text.toLowerCase();
+
+    for (var i = 0; i < text.length; i++) {
+      if (text[i] === 'a') {
+        count++;
+      }
+    }
+
+    document.getElementById("result").textContent = "A useg text-nd orson too: " + count;
+  }
+</script>
+
+</body>
+</html>

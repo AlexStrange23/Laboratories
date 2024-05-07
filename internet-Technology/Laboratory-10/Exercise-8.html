@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+  function sumNumbersEndingInZero(a, b) {
+    var sum = 0;
+    for (var i = a; i <= b; i++) {
+      if (i % 10 === 0) {
+        sum += i;
+      }
+    }
+    return sum;
+  }
+
+  function getAndCalculateSum() {
+    var a = parseInt(prompt("Эхлэх тоо :"));
+    var b = parseInt(prompt("Төгсгөлийн тоо :"));
+    
+    if (!isNaN(a) && !isNaN(b)) {
+      var result = sumNumbersEndingInZero(a, b);
+      alert(result);
+    } else {
+      alert("Зөв тоонууд оруулна уу.  ");
+    }
+  }
+</script>
+</head>
+<body>
+<h2>0 төгссөн тоонуудын нийлбэр</h2>
+<button onclick="getAndCalculateSum()">Бодох</button>
+</body>
+</html>
